@@ -1,0 +1,53 @@
+/* General footer styling */
+.general-footer {
+    background-color: #db7210;
+    padding: 50px 100px;
+    font-family: 'Play', sans-serif;
+  }
+  
+  /* Footer container */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px 0;
+    flex-wrap: wrap;
+  }
+  
+  /* Social media icons styling */
+  .social-icons a {
+    font-size: 2em;
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #353535;
+  }
+  
+  /* Copyright and credits */
+  .copyright {
+    font-size: 1.1em;
+    text-align: center;
+  }
+  
+  /* Responsive behavior */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .copyright {
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    .social-icons {
+      margin-bottom: 20px;
+    }
+  }
+  

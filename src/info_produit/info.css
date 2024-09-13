@@ -1,0 +1,147 @@
+.info-page {
+    padding: 20px;
+}
+
+.categories {
+    margin-top: 20px;
+}
+
+.rows {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; /* Add spacing between cards */
+    margin-left: 30px;
+    width: 100%;
+}
+
+.col-md-4, .col-sm-6, .col-lg-3 {
+    flex: 1 1 auto; /* Allow columns to shrink or grow */
+    max-width: 200px; /* Set a max-width for the columns */
+}
+
+.cards {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 220px; /* Full width of the column */
+    margin: 30px;
+}
+
+.card-img-top {
+    width: 90%;
+    height: 200px; /* Set a smaller height for the image */
+    object-fit:cover; 
+    margin-top: 10px;
+    margin-left: 10px;/* Ensure the image covers the area */
+}
+
+.card-body {
+    padding: 12px; /* Reduce padding inside the card */
+}
+
+.card-title {
+    font-size: 1.2rem; /* Smaller font size for the title */
+    margin-bottom: 8px;
+}
+
+.card-text {
+    font-size: 1rem; /* Smaller font size for the text */
+    color: #555;
+}
+
+.loading {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.back {
+    background-color: #0d0d0e;
+    color: white;
+    border: none;
+    width: 70px;
+    height: 25px;
+    font-size:medium;
+    margin-left: 69%;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .rows {
+        gap: 20px; /* Reduce gap between cards */
+        margin-left: 0; /* Remove margin to fit cards better */
+        justify-content: center; /* Center the content on smaller screens */
+    }
+
+    .cards {
+        margin: 15px auto; /* Center the cards horizontally and reduce margin */
+    }
+
+    .card-img-top {
+        height: 150px; /* Slightly reduce image height */
+    }
+
+    .card-body {
+        padding: 10px; /* Adjust padding inside the card */
+    }
+
+    .card-title {
+        font-size: 1rem; /* Adjust font size for the title */
+    }
+
+    .card-text {
+        font-size: 0.9rem; /* Adjust font size for the text */
+    }
+
+    .back {
+        width: 60px; /* Adjust button width */
+        height: 20px; /* Adjust button height */
+        margin-left: auto; /* Center the button on small screens */
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .rows {
+        flex-direction: column; /* Stack cards vertically on very small screens */
+        gap: 15px; /* Reduce gap between cards further */
+        align-items: center; /* Center the cards */
+    }
+
+    .cards {
+        margin: 10px 0; /* Remove the margin around the cards */
+    }
+
+    .card-img-top {
+        height: 120px; /* Reduce image height further */
+    }
+
+    .card-body {
+        padding: 8px; /* Reduce padding inside the card */
+    }
+
+    .card-title {
+        font-size: 0.9rem; /* Adjust font size for titles */
+    }
+
+    .card-text {
+        font-size: 0.8rem; /* Adjust font size for text */
+    }
+
+    .back {
+        width: 50px; /* Further adjust button width */
+        height: 18px; /* Adjust button height */
+    }
+}
+

@@ -1,0 +1,148 @@
+/* Container styling */
+.container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 0 10px; /* Padding on left and right of container */
+  box-sizing: border-box; /* Ensures padding is included in the total width */
+}
+
+/* Row styling */
+.row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Create 5 equal columns */
+  gap: 20px; /* Space between cards */
+}
+
+/* Column (Card) styling */
+.column {
+  box-sizing: border-box; /* Ensures padding doesn't affect the width */
+  padding: 0; /* Remove padding to ensure no extra space around cards */
+}
+
+/* Card styling */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  padding: 8px;
+  text-align: center;
+  background-color: #f1f1f1;
+  width: 95%; /* Full width for the card within column */
+  height: 300px; /* Fixed height to make all cards uniform */
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute space between elements */
+}
+
+.card img {
+  width: 95%;
+  height: 60%; /* Fixed height for all images */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+  border-radius: 15px 15px 0 0;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between; /* Distributes space between price and button */
+  align-items: center;
+  padding: 8px 8px;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.buy-btn-card {
+  background-color: rgb(252, 70, 4);
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 1px 2px; /* Smaller padding */
+  font-size: 14px; /* Smaller font size */
+  border-radius: 6px; /* Adjusted border radius */
+  transition: 0.4s;
+}
+
+.buy-btn-card:hover {
+  background: transparent;
+  border: 2px solid rgb(252, 70, 4);
+  cursor: pointer;
+  color: black;
+}
+
+/* Responsive breakpoints */
+
+/* For tablets and small screens */
+@media (max-width: 1024px) {
+  .row {
+    grid-template-columns: repeat(4, 1fr); /* Adjust to 4 columns for tablets */
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .row {
+    grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns for mobile screens */
+  }
+}
+
+/* For very small screens (phones) */
+@media (max-width: 480px) {
+  .row {
+    grid-template-columns: 1fr; /* Single column for very small screens */
+  }
+
+  .card {
+    height: auto; /* Remove fixed height for flexibility */
+  }
+
+  .buy-btn-card {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    padding: 3px 5px; /* Adjust padding */
+  }
+
+  .price {
+    font-size: 14px; /* Slightly smaller font for price on small screens */
+  }
+}
+
+/* Descriptions section styling */
+.descriptions-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.description {
+  width: 220px;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+.description h3 {
+  color: #333;
+}
+
+.description p {
+  color: #666;
+}
+
+/* Responsive adjustments for descriptions */
+@media (max-width: 768px) {
+  .descriptions-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description {
+    width: 100%; /* Full width for each description */
+    margin: 10px 0;
+  }
+}
