@@ -454,7 +454,9 @@ const products = [
 
 ]
 
-
+app.get("/", (req, res) => {
+  res.send("Welcome to the API! Use /products to get a list of products.");
+});
 
 
 app.get("/products", (req, res) => {
