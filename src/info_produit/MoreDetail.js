@@ -18,7 +18,7 @@ const MoreDetail = () => {
       try {
         console.log(`Fetching details for Product ID: ${productId}, Category ID: ${categoryId}`);
 
-        const response = await fetch(`/products/${productId}/categories/${categoryId}`);
+        const response = await fetch(`https://ecome-ysn-4ojqhuy.vercel.app/products/${productId}/categories/${categoryId}`);
         if (!response.ok) {
           const errorData = await response.json();
           throw new Error(errorData.message || 'Failed to fetch category');

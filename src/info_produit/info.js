@@ -8,10 +8,11 @@ import { faLeftLong } from '@fortawesome/free-solid-svg-icons';
 function Info() {
     const [product, setProduct] = useState(null);
     const { id } = useParams(); // Get the product id from the URL params
+    
 
     // Fetch data from the backend when the component mounts
     useEffect(() => {
-        fetch(`/products/${id}`)
+        fetch(`https://ecome-ysn-4ojqhuy.vercel.app/products/${id}`)
             .then(response => response.json())
             .then(data => {
                 setProduct(data); // Store individual product data in state
