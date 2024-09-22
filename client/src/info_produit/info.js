@@ -12,7 +12,7 @@ function Info() {
 
     // Fetch data from the backend when the component mounts
     useEffect(() => {
-        fetch(`https://ecome-ysn-4ojqhuy.vercel.app/products/${id}`)
+        fetch(`https://ecome-ysn.vercel.app/products/${id}`)
             .then(response => response.json())
             .then(data => {
                 setProduct(data); // Store individual product data in state

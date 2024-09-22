@@ -11,7 +11,7 @@ function Cards(){
 
   // Fetch data from the backend when the component mounts
   useEffect(() => {
-    fetch("https://ecome-ysn-4ojqhuy.vercel.app/products")
+    fetch("https://ecome-ysn.vercel.app/products")
       .then(response => response.json())
       .then(data => {
         setBackendData(data.products); // Store products data in state
