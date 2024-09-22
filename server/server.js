@@ -278,40 +278,40 @@ const products = [
     
         {
           "id": 7,
-          "image": "/images/keyboard3.png",
+          "image": "/images/Keyboard3.png",
           "categorie":[
             {
               "id":39,
               "description": "Typically Good Quality for your Comfortable ",
-              "Image": "/images/keyboard3.png",
+              "Image": "/images/Keyboard3.png",
               "nom": "Casque Bluetooth",
               "Prix": "299€"
             },
             {
               "id":40,
               "description": "Typically Good Quality for your Comfortable ",
-              "Image": "/images/keyboard3.png",
+              "Image": "/images/Keyboard3.png",
               "nom": "Casque Bluetooth ",
               "Prix": "299€"
             },
             {
               "id":41,
               "description": "Typically Good Quality for your Comfortable ",
-              "Image": "/images/keyboard3.png",
+              "Image": "/images/Keyboard3.png",
               "nom": "Casque Bluetooth ",
               "Prix": "299€"
             },
             {
               "id":42,
               "description": "Typically Good Quality for your Comfortable ",
-              "Image": "/images/keyboard3.png",
+              "Image": "/images/Keyboard3.png",
               "nom": "Casque Bluetooth ",
               "Prix": "299€"
             },
             {
               "id":43,
               "description": "Typically Good Quality for your Comfortable ",
-              "Image": "/images/keyboard3.png",
+              "Image": "/images/Keyboard3.png",
               "nom": "Casque Bluetooth ",
               "Prix": "299€"
             }
